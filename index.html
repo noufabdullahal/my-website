@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Nouf Alomari - Data Analyst</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600&display=swap" rel="stylesheet" />
+
+  <style>
+    body {
+      font-family: 'Cairo', sans-serif;
+      background: url('data-analytics.jpg') no-repeat center center fixed;
+      background-size: cover;
+      color: #333;
+      margin: 0;
+      padding: 0;
+    }
+
+    .about-card {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      background-color: #ffffffcc;
+      padding: 30px;
+      border-radius: 16px;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+      max-width: 600px;
+      margin: 40px auto;
+      text-align: center;
+      animation: fadeIn 1s ease-in-out;
+    }
+
+    .about-card img {
+      width: 130px;
+      height: 130px;
+      border-radius: 50%;
+      border: 3px solid #4A90E2;
+      margin-bottom: 15px;
+    }
+
+    .about-text h2 {
+      font-size: 1.8em;
+      margin-bottom: 5px;
+      color: #333;
+    }
+
+    .about-text h4 {
+      font-size: 1.2em;
+      color: #4A90E2;
+      margin-bottom: 15px;
+    }
+
+    .about-text p {
+      font-size: 1.1em;
+      color: #555;
+      line-height: 1.6;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    .projects {
+      padding: 30px;
+      background-color: rgba(255, 255, 255, 0.9);
+      margin: 20px 10%;
+      border-radius: 10px;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+    }
+
+    .projects h2 {
+      text-align: center;
+      color: #000;
+      font-size: 2.5em;
+    }
+
+    .project-list {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+    }
+
+    .project {
+      text-align: center;
+      margin: 20px 10px;
+      width: 45%;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    }
+
+    .project img {
+      width: 100%;
+      height: auto;
+      max-width: 800px;
+      border: 2px solid #000;
+      border-radius: 8px;
+    }
+
+    .project h3 {
+      font-size: 1.6em;
+      color: #333;
+      margin: 10px 0;
+    }
+
+    .project p {
+      font-size: 1.1em;
+      color: #555;
+    }
+
+    .project i {
+      font-size: 2em;
+      color: #007BFF;
+      margin-bottom: 10px;
+    }
+
+    .resume-contact {
+      display: flex;
+      justify-content: space-around;
+      padding: 30px;
+      background-color: rgba(255, 255, 255, 0.9);
+      margin: 20px 10%;
+      border-radius: 10px;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+    }
+
+    .resume, .contact {
+      width: 45%;
+      text-align: center;
+    }
+
+    .resume a, .contact a {
+      display: block;
+      margin: 10px 0;
+      text-decoration: none;
+      font-size: 1.3em;
+      color: #000;
+      font-weight: bold;
+    }
+
+    .resume a:hover, .contact a:hover,
+    .social-icons a:hover {
+      color: #007BFF;
+    }
+
+    .social-icons a {
+      color: #000;
+      font-weight: bold;
+      font-size: 1.2em;
+    }
+
+    .social-icons .fab {
+      font-size: 1.5em;
+      margin: 0 10px;
+    }
+
+    @media (max-width: 768px) {
+      .project {
+        width: 90%;
+      }
+      .resume-contact {
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <!-- About Me -->
+
+
+  <section class="about-card">
+    <div class="about-text">
+      <h2>Nouf Alzahrani</h2>
+      <h4>IT Graduate </h4>
+      <p>
+        I'm a passionate Information Technology graduate specializing in <strong>data analysis</strong> and <strong>AI</strong>. With hands-on skills in <strong>Python</strong>, <strong>SQL</strong>, and <strong>Power BI</strong>, I turn data into smart insights.<br><br>
+        I completed the <em>"Data & AI Bootcamp T5"</em> by <strong>SDAIA</strong>, and I'm eager to contribute to data-driven teams with impactful solutions.
+      </p>
+    </div>
+  </section>
+  
+
+  <!-- Projects -->
+  <section class="projects">
+    <h2>My Projects</h2>
+    <div class="project-list">
+      <div class="project">
+        <i class="fas fa-chart-line"></i>
+        <h3>COVID Dashboard</h3>
+        <img src="covid.png" alt="COVID Project">
+        <p>Dashboard displaying global COVID-19 cases.</p>
+        <a href="https://github.com/noufabdullahal/Data-analysis/blob/main/COVID.pbix" target="_blank">View Project</a>
+      </div>
+
+      <div class="project">
+        <i class="fas fa-database"></i>
+        <h3>Sales Analysis</h3>
+        <img src="seals.png" alt="Sales Project">
+        <p>Dashboard showing market performance and yearly growth.</p>
+        <a href="https://github.com/noufabdullahal/Data-analysis/blob/main/seals.pbix" target="_blank">View Project</a>
+      </div>
+
+      <div class="project">
+        <i class="fas fa-user-friends"></i>
+        <h3>Employee Report</h3>
+        <img src="Employee.png" alt="Employee Project">
+        <p>Detailed report on employee distribution.</p>
+        <a href="https://github.com/noufabdullahal/Data-analysis/blob/main/Employee%20Data%20Analysis.pbix" target="_blank">View Project</a>
+      </div>
+
+      <div class="project">
+        <i class="fas fa-film"></i>
+        <h3>Amazon Prime Analysis</h3>
+        <img src="Amazon Prime Movies and TV Shows.png" alt="Amazon Project">
+        <p>Analysis of available content on Amazon Prime.</p>
+        <a href="https://github.com/noufabdullahal/Data-analysis/blob/main/Amazon%20Prime%20Movies%20and%20TV%20Shows.pbix" target="_blank">View Project</a>
+      </div>
+
+      <div class="project">
+        <i class="fas fa-shopping-cart"></i>
+        <h3>Supermarket Analysis</h3>
+        <img src="supermarkit.png" alt="Supermarket Project">
+        <p>Sales and customer behavior analysis in the store.</p>
+        <a href="https://github.com/noufabdullahal/Data-analysis/blob/main/supermarket.pbix" target="_blank">View Project</a>
+      </div>
+
+      <div class="project">
+        <i class="fas fa-car-crash"></i>
+        <h3>YOLO - Smart Speed Limit</h3>
+        <img src="Screenshot 2025-04-17 194601.png" alt="YOLO Project">
+        <p>Computer vision project for traffic sign detection and safety analysis.</p>
+      </div>
+
+      <div class="project">
+        <i class="fas fa-university"></i>
+        <h3>Bank Reviews Analysis</h3>
+        <img src="30974.jpg" alt="Bank Reviews Project">
+        <p>Analyzed over 1000 bank reviews using AI.</p>
+        <a href="https://github.com/noufabdullahal/my-website/blob/main/bank.ipynb" target="_blank">View Project</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Resume and Contact -->
+  <section class="resume-contact">
+    <div class="resume">
+      <h2>Resume</h2>
+      <a href="Nouf-Abdullah-AL-ZAHRANI.pdf" download><i class="fas fa-file-pdf"></i> Download Resume</a>
+    </div>
+
+    <div class="contact">
+      <h2>Contact</h2>
+      <p>Email: <a href="mailto:noufabdullah88@outlook.com">noufabdullah88@outlook.com</a></p>
+      <p>Phone: <a href="tel:0558943276">0558943276</a></p>
+
+      <div class="social-icons">
+        <a href="https://www.linkedin.com/in/nouf-al-zahrani-73a89225b/" target="_blank"><i class="fab fa-linkedin"></i></a>
+        <a href="https://github.com/noufabdullahal/Data-analysis" target="_blank"><i class="fab fa-github"></i></a>
+      </div>
+    </div>
+  </section>
+
+  <script>
+    let visitorCount = localStorage.getItem('visitorCount');
+    if (!visitorCount) visitorCount = 0;
+    visitorCount++;
+    localStorage.setItem('visitorCount', visitorCount);
+    console.log("Visitor Count: " + visitorCount);
+  </script>
+</body>
+</html>

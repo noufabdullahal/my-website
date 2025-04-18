@@ -1,0 +1,251 @@
+/* تنسيق الصفحة العامة */
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to bottom right, #4A90E2, #D9E8F5);
+    color: #333;
+    margin: 0;
+    padding: 0;
+    direction: rtl;
+}
+
+/* كارد تعريف احترافي */
+.about-card {
+    background-color: #ffffffcc;
+    padding: 30px;
+    border-radius: 16px;
+    max-width: 700px;
+    margin: 40px auto;
+    text-align: center;
+    box-shadow: 0 6px 16px rgba(0,0,0,0.1);
+}
+
+.about-text h2 {
+    font-size: 2em;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.about-text h4 {
+    font-size: 1.2em;
+    color: #4A90E2;
+    margin-bottom: 20px;
+}
+
+.about-text p {
+    font-size: 1.1em;
+    line-height: 1.7;
+    color: #444;
+}
+
+
+.about-text h2 {
+    font-size: 1.8em;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+.about-text h4 {
+    font-size: 1.2em;
+    color: #4A90E2;
+    margin-bottom: 15px;
+}
+
+.about-text p {
+    font-size: 1.1em;
+    color: #555;
+    line-height: 1.6;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* مشاريع */
+.projects {
+    padding: 50px 0;
+    background-color: #fff;
+    margin: 20px 0;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.projects h2 {
+    text-align: center;
+    color: #000;
+    font-size: 2em;
+}
+
+.project-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 0 20px;
+}
+
+.project {
+    text-align: center;
+    margin-bottom: 30px;
+    width: 45%;
+    margin-top: 20px;
+}
+
+.project img {
+    width: 800px;
+    height: 450px;
+    object-fit: cover;
+    border: 2px solid #000;
+    border-radius: 8px;
+}
+
+.project h3 {
+    font-size: 1.5em;
+    color: #333;
+    margin: 10px 0;
+}
+
+.project p {
+    font-size: 1.1em;
+    color: #555;
+}
+
+/* السيرة الذاتية ومعلومات التواصل */
+.resume-contact {
+    display: flex;
+    justify-content: space-around;
+    padding: 50px 0;
+    background-color: #fff;
+    margin: 20px 0;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.resume, .contact {
+    width: 45%;
+    text-align: center;
+}
+
+.resume a, .contact a {
+    display: block;
+    margin: 10px 0;
+    text-decoration: none;
+    font-size: 1.3em;
+    color: #000;
+    font-weight: bold;
+}
+
+.social-icons a {
+    color: #000;
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+/* أيقونات متحركة حول الصورة */
+.orbit-container {
+    position: relative;
+    width: 300px;
+    height: 300px;
+    margin: auto;
+    margin-top: 30px;
+}
+
+.center-icon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    border: 3px solid #4A90E2;
+    z-index: 2;
+}
+
+.orbit-icon {
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: #ffffffdd;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 26px;
+    color: #4A90E2;
+    box-shadow: 0 0 8px rgba(0,0,0,0.1);
+    animation: rotate 12s linear infinite;
+}
+
+.orbit-icon i {
+    pointer-events: none;
+}
+
+.orbit1 { top: 0; left: 50%; transform: translateX(-50%); animation-delay: 0s; }
+.orbit2 { top: 50%; left: 100%; transform: translateY(-50%); animation-delay: 2s; }
+.orbit3 { top: 100%; left: 50%; transform: translate(-50%, -100%); animation-delay: 4s; }
+.orbit4 { top: 50%; left: 0; transform: translateY(-50%); animation-delay: 6s; }
+
+@keyframes rotate {
+    0%   { transform: rotate(0deg) translateX(140px) rotate(0deg); }
+    100% { transform: rotate(360deg) translateX(140px) rotate(-360deg); }
+}
+
+/* الجوال */
+@media (max-width: 768px) {
+    .about, .projects, .resume-contact {
+        padding: 20px;
+        margin: 10px;
+    }
+
+    .about-card {
+        margin: 20px 10px;
+    }
+
+    .project-list {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .project {
+        width: 90%;
+    }
+
+    .project img {
+        width: 100%;
+        height: auto;
+    }
+
+    .resume-contact {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .resume, .contact {
+        width: 100%;
+    }
+
+    .about-text p,
+    .project p {
+        font-size: 1em;
+    }
+
+    .projects h2 {
+        font-size: 1.6em;
+    }
+
+    .orbit-container {
+        width: 220px;
+        height: 220px;
+    }
+
+    .orbit-icon {
+        width: 50px;
+        height: 50px;
+        font-size: 22px;
+    }
+
+    .center-icon {
+        width: 110px;
+        height: 110px;
+    }
+}
